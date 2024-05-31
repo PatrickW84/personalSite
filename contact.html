@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Info</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <!-- make buttons and put name here-->
+    <nav>
+      <div id="name">
+        <h1>Patrick Williams</h1>
+      </div>
+      <div>
+        <a href="contact.html"
+          ><button
+            class="navBtn"
+            class="active"
+            type="button"
+            onclick="myFunction()"
+          >
+            Contact Me
+          </button></a
+        >
+        <a href="about.html"
+          ><button class="navBtn" type="button" onclick="myFunction()">
+            About Me
+          </button></a
+        >
+        <a href="portfolio.html"
+          ><button
+            class="navBtn"
+            href="portfolio.html"
+            type="button"
+            onclick="myFunction()"
+          >
+            Portfolio
+          </button></a
+        >
+        <a href="index.html"
+          ><button class="navBtn" type="button" onclick="myFunction()">
+            Home
+          </button></a
+        >
+      </div>
+    </nav>
+    <!-- put main body here - Request name and email, submit button -->
+    <main>
+      <h2>Contact Me</h2>
+      <!-- action gives the button an address to go to when pressed-->
+      <form id="form" action="formSubmitted.html">
+        <div class="labels">
+          <label for="name">Name:</label>
+          <br />
+          <input id="nameBox" type="text" name="name" value="Your Name" />
+        </div>
+        <div class="labels">
+          <label for="email">Email:</label>
+          <br />
+          <input id="emailBox" type="email" name="email" value="@" />
+        </div>
+        <div class="labels">
+          <label for="message">Message:</label>
+          <br />
+          <textarea
+            name="message"
+            class="messageBox"
+            rows="6"
+            cols="50"
+          ></textarea>
+        </div>
+        <button class="submitBtn" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <!-- Footer - links to social media here; create image with link in a footer bar-->
+    <footer>
+      <a href="https://www.youtube.com" target="_blank"
+        ><img
+          class="media"
+          src="https://static.vecteezy.com/system/resources/previews/023/986/704/non_2x/youtube-logo-youtube-logo-transparent-youtube-icon-transparent-free-free-png.png"
+          alt="Youtube"
+      /></a>
+      <a href="https://www.facebook.com" target="_blank"
+        ><img
+          class="media"
+          src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
+          alt="Facebook"
+      /></a>
+      <a href="https://www.linkedin.com/" target="_blank"
+        ><img
+          class="media"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png"
+          alt="LinkedIn"
+      /></a>
+      <a href="https://myspace.com" target="_blank">
+        <img
+          class="media"
+          src="https://cdn.freebiesupply.com/logos/large/2x/myspace-logo-svg-vector.svg"
+          alt="My Space"
+      /></a>
+    </footer>
+  </body>
+</html>
